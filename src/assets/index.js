@@ -32,6 +32,9 @@ import tripguide from "./tripguide.png";
 import vikash from "./company/vikash.jpg";
 import Dhanpat from "./company/dhapat.jpg";
 import Mustafa from "./company/mustafa.jpg";
+import defa from "./defa.png";
+import poki from "./poki.png";
+import cm from "./CM.png";
  
 
 export {
@@ -66,4 +69,7 @@ export {
   vikash,
   Dhanpat,
   Mustafa,
+  defa,
+  poki,
+  cm
 };

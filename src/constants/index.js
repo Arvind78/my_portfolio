@@ -22,6 +22,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  poki,
+  cm,
+  defa,
 } from "../assets";
 
 export const navLinks = [  {
@@ -32,10 +35,7 @@ export const navLinks = [  {
     id: "about",
     title: "About",
   },
-  {
-    id: "service",
-    title: "Service",
-  },
+
   {
     id: "work",
     title: "Work",
@@ -43,6 +43,10 @@ export const navLinks = [  {
   {
     id: "contact",
     title: "Contact",
+  },
+  {
+    id: "resume",
+    title: "Resume",
   },
 ];
 
@@ -60,7 +64,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Instractor & Mentor",
     icon: creator,
   },
 ];
@@ -214,68 +218,72 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "DeFa Testnet",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A decentralized finance platform enabling seamless lending and borrowing of digital assets. It leverages blockchain technology for secure and transparent transactions, offering an intuitive user experience.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "mongoose",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "blockchain",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: defa,
+    source_code_link:
+      "https://github.com/Cadillacs-Blockchain-Development/DeFa-Lending-Borrowing-UI.git",
   },
   {
-    name: "Job IT",
+    name: "Climate Mitigate",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A cutting-edge blockchain-based application for managing and tracking digital assets efficiently. Designed with React and Node.js for scalability and an enhanced user experience.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "mongoose",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "blockchain",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: cm,
+    source_code_link:
+      "https://github.com/Cadillacs-Blockchain-Development/cm-v2.git",
   },
   {
-    name: "Trip Guide",
+    name: "Poki Token",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A blockchain-powered presale platform enabling users to participate in token presales securely and efficiently. Built with Next.js, it ensures seamless token distribution, transaction transparency, and user trust.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "mongoose",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "blockchain",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: poki,
+    source_code_link:
+      "https://github.com/Cadillacs-Blockchain-Development/poki-token.git",
   },
 ];
+
 
 export { services, technologies, experiences, testimonials, projects };

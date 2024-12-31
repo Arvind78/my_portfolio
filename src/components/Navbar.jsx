@@ -8,7 +8,7 @@ import { StarsCanvas } from "./canvas";
 import  Typewriter from "typewriter-effect";
 
 const Navbar = () => {
-  const [active, setActive] = useState("Home");
+  const [active, setActive] = useState("Resume");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
