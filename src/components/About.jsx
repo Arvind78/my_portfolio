@@ -27,7 +27,7 @@ const ServiceCard = ({ index, title, icon }) => (
           className='w-16 h-16 object-contain'
         />
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
+        <h3 className='text-white text-[18px] uppercase  sm:text-[20px] font-bold text-center'>
           {title}
         </h3>
       </div>
@@ -45,7 +45,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify break-all'
+        className='mt-4 text-secondary text-[15px] sm:text-[17px] max-w-3xl leading-[26px] sm:leading-[30px] text-justify break-all'
       >
         I'm a skilled full-stack developer with expertise in TypeScript and JavaScript,
          specializing in frameworks like React, Node.js, and Next.js. I excel at designing and building efficient,

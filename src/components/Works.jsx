@@ -48,15 +48,15 @@ const ProjectCard = ({
         </div>
 
         <div className='mt-1'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+          <h3 className='text-white font-bold text-[20px] sm:text-[24px]'>{name}</h3>
+          <p className='mt-2 text-secondary text-[12px] sm:text-[14px]'>{description}</p>
         </div>
 
         <div className='mt-4 flex flex-wrap gap-2'>
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
+              className={` text-[12px] sm:text-[14px] ${tag.color}`}
             >
               #{tag.name}
             </p>
@@ -78,7 +78,7 @@ const Works = () => {
       <div className='w-full flex'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className='mt-3 text-secondary text-[15px] sm:text-[17px] max-w-3xl leading-[26px] sm:leading-[30px]'
         >
        These projects highlight my skills and experience through real-world applications of my work. Each project includes a brief description, along with links to code repositories and live demos. They showcase my expertise in solving complex problems, proficiency with diverse technologies, and ability to manage projects efficiently and effectively.
         </motion.p>

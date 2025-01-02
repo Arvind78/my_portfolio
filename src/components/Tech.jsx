@@ -24,14 +24,14 @@ const Tech = () => {
             variants={slideIn("left", "tween", 0.2, 1)} // Make sure `slideIn` is properly defined
             className="flex-[0.75] bg-black-100 p-8 rounded-2xl shadow-lg"
           >
-            <h3 className="text-xl font-semibold mb-2">Work Experience:</h3>
-            <i className="block mb-2">January 2023 – Present (1 Year)</i>
-            <p>
+            <h3 className="text-[18px] sm:text-xl font-semibold mb-2">Work Experience:</h3>
+            <i className="block mb-2 text-[12px] sm:text-[14px]">January 2023 – Present (1 Year)</i>
+            <p className="text-[12px] sm:text-[14px] mb-4">
               As a Full Stack Developer at Cadillacs Exprice, I have been
               responsible for designing and building web applications with a
               focus on both frontend and backend development. My role involves:
             </p>
-            <ul className="list-disc pl-6 mt-4 space-y-2">
+            <ul className="list-disc pl-6 mt-4 space-y-2 text-[12px] sm:text-[14px]">
               <li>
                 <strong>Frontend Development:</strong> Building dynamic and
                 responsive user interfaces using <strong>React</strong>,{" "}

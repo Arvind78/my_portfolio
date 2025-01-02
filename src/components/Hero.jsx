@@ -31,8 +31,8 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='text-[#915EFF]'>Arvind </span>
           </h1>
-          <h2 className={`text-[#915EFF] text-[34px] font-[700] `}>
-          <Typewriter options={{ strings:typewriterStrings, autoStart: true, loop: true  , cursor: ''}} />
+          <h2 className={`text-[#915EFF]  text-[26px] sm:text-[34px] font-[700] `}>
+          <Typewriter options={{ strings:typewriterStrings, autoStart: true, loop: true  , cursor: '.'}} />
           </h2>
         
         </div>
