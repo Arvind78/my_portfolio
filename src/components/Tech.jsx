@@ -68,7 +68,7 @@ const Tech = () => {
           {/* Skills Section */}
           <motion.div
             variants={slideIn("right", "tween", 0.2, 1)} // Make sure `slideIn` is properly defined
-            className="flex-[0.75] bg-transparent p-8 rounded-2xl shadow-lg"
+            className="flex-[0.75] bg-transparent p-8 rounded-2xl"
           >
             <Skills />
           </motion.div>

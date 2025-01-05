@@ -5,7 +5,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ screenType }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  const { scene } = useGLTF("./desktop_pc/scene.gltf");
 
   // Adjust scale and position based on screen type
   const getScale = () => {
@@ -33,11 +33,10 @@ const Computers = ({ screenType }) => {
       />
       <pointLight intensity={1} />
       <primitive
-        object={computer.scene}
+        object={scene}
         scale={getScale()}
         position={getPosition()}
         rotation={[-0.01, -0.2, -0.1]}
-        // width={0.3}
       />
     </mesh>
   );
@@ -77,7 +76,13 @@ const ComputersCanvas = () => {
       shadows
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
+      gl={{
+        preserveDrawingBuffer: true,
+        antialias: true,
+        powerPreference: "high-performance", // Optimize GPU usage
+        onContextLost: () => console.error("WebGL context lost"),
+        onContextRestore: () => console.info("WebGL context restored"),
+      }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
@@ -87,7 +92,6 @@ const ComputersCanvas = () => {
         />
         <Computers screenType={screenType} />
       </Suspense>
-
       <Preload all />
     </Canvas>
   );
