@@ -64,7 +64,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Instractor & Mentor",
+    title: "Instructor & Mentor",
     icon: creator,
   },
 ];
@@ -128,8 +128,8 @@ const experiences = [
   {
     title: "Full Stack Developer",
     company_name: "Cadillac's",
-    icon: "cadillacs", 
-    iconBg: "#123456", 
+    icon: "https://avatars.githubusercontent.com/u/138363829?s=200&v=4", 
+    iconBg: "#ccc", 
     date: "June 2024 - Present",
     points: [
       "Designing and developing scalable web and blockchain applications using modern frameworks and tools.",
@@ -143,8 +143,8 @@ const experiences = [
   {
     title: "Full Stack Internship Training Program",
     company_name: "Internshala",
-    icon: "internshala", // Ensure the appropriate icon or image is imported
-    iconBg: "#F4F4F4", // Replace with a suitable background color
+    icon: "https://th.bing.com/th/id/R.649195f1ebd0e9be02843a5eb73d1474?rik=Yqvkn0TeJIgWGg&riu=http%3a%2f%2fimage3.mouthshut.com%2fimages%2fimagesp%2f925769318s.png&ehk=SueNPyLpN4pEShdYFBRtl%2fGebRQrIVa1%2f4FUVHHxbek%3d&risl=&pid=ImgRaw&r=0", // Ensure the appropriate icon or image is imported
+    iconBg: "#ccc", // Replace with a suitable background color
     date: "December 2023 - May 2024",
     points: [
       "Gained hands-on experience in full-stack development using MERN stack (MongoDB, Express.js, React.js, Node.js).",
@@ -157,8 +157,8 @@ const experiences = [
   {
     title: "Full Stack Development Training",
     company_name: "Newton School",
-    icon: "newtonschool", // Ensure the correct icon or image is imported
-    iconBg: "#1E293B", // Replace with a suitable background color
+    icon: "https://cdn.hashnode.com/res/hashnode/image/upload/v1645601941731/GAjDZ8694.png?w=500&h=500&fit=crop&crop=faces&auto=compress,format&format=webp", // Ensure the correct icon or image is imported
+    iconBg: "#ccc", // Replace with a suitable background color
     date: "February 2022 - October 2023",
     points: [
       "Completed an intensive full-stack development program covering front-end and back-end technologies.",
@@ -173,7 +173,7 @@ const experiences = [
   {
     title: "Post Graduate Diploma in Computer Applications",
     company_name: "EMAX India",
-    icon: "emaxIndia", // Ensure the correct icon or image is imported
+    icon: "https://yt3.ggpht.com/ytc/AKedOLQf836x4pL7QOWl7YYdAjwokwSEx8Wjs9JfJWL_JeA=s900-c-k-c0x00ffffff-no-rj", // Ensure the correct icon or image is imported
     iconBg: "#F4E1D2", // Replace with a suitable background color
     date: "September 2020 - August 2021",
     points: [
@@ -286,4 +286,22 @@ const projects = [
 ];
 
 
-export { services, technologies, experiences, testimonials, projects };
+const socialMedia =[{
+  name:"github",
+  link:"https://github.com/Arvind78",
+  icon:"https://img.icons8.com/?size=100&id=WCL5hPLvhUjQ&format=png&color=000000"
+},
+{
+  name:"linkedin",
+  link:"https://www.linkedin.com/in/arvind-varma-884a7423a/",
+  icon:"https://img.icons8.com/?size=100&id=13930&format=png&color=000000"
+},
+{
+  name:"instagram",
+  link:"https://www.instagram.com/arvindvarma_dev/",
+  icon:"https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000"
+}
+
+]
+
+export { services, technologies, experiences, testimonials, projects,socialMedia };

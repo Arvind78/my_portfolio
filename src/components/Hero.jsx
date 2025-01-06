@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import Typewriter from 'typewriter-effect';
+import { socialMedia } from "../constants";
+import { Link } from "react-router-dom";
 
 const typewriterStrings=[
   'Building Scalable Web Applications',
@@ -34,7 +36,29 @@ const Hero = () => {
           <h2 className={`text-[#915EFF]  text-[26px] sm:text-[34px] font-[700] `}>
           <Typewriter options={{ strings:typewriterStrings, autoStart: true, loop: true  , cursor: '.'}} />
           </h2>
-        
+          <div className="flex justify-start items-center gap-4 mt-4 absolute top-[150px] z-10">
+  {socialMedia?.map((social, index) => (
+    <Link
+      to={social.link}
+      target="_blank"
+      key={index}
+      className="w-[40px] h-[40px] cursor-pointer rounded-full bg-[#fff] flex justify-center items-center shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-xl hover:rotate-[15deg]"
+    >
+      <img
+        src={social.icon}
+        alt={social.name}
+        className={`${
+          social.name === "github"
+            ? "w-[40px] h-[40px]"
+            : "w-[32px] h-[32px]"
+        } object-contain rounded-full transition-transform duration-300 hover:scale-110`}
+      />
+    </Link>
+  ))}
+</div>
+
+
+
         </div>
       </div>
 
