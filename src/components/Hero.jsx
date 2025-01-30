@@ -33,7 +33,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='text-[#915EFF]'>Arvind </span>
           </h1>
-          <h2 className={`text-[#915EFF]  text-[26px] sm:text-[34px] font-[700] `}>
+          <h2 className={`text-[#915EFF]  text-[20px] sm:text-[34px] font-[700] `}>
           <Typewriter options={{ strings:typewriterStrings, autoStart: true, loop: true  , cursor: '.'}} />
           </h2>
           <div className="flex justify-start items-center gap-4 mt-4 absolute top-[150px] z-10">
@@ -62,7 +62,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* <ComputersCanvas /> */}
+      <ComputersCanvas />
 
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
