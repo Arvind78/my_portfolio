@@ -25,6 +25,7 @@ import {
   poki,
   cm,
   defa,
+  resume
 } from "../assets";
 
 export const navLinks = [  {
@@ -47,6 +48,7 @@ export const navLinks = [  {
   {
     id: "resume",
     title: "Resume",
+    link: resume,
   },
 ];
 

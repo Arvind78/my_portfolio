@@ -134,7 +134,11 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
+                  {nav.title==="resume"?
+                  <a href={`${nav.link}`} download>{nav.title}</a>:
+
                   <a href={`#${nav.id}`}>{nav.title}</a>
+                 }
                 </li>
               ))}
             </ul>

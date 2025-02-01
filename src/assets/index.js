@@ -35,6 +35,7 @@ import Mustafa from "./company/mustafa.jpg";
 import defa from "./defa.png";
 import poki from "./poki.png";
 import cm from "./CM.png";
+import resume from "../../public/resume/Arvind_varma_resume.pdf";
  
 
 export {
@@ -71,5 +72,6 @@ export {
   Mustafa,
   defa,
   poki,
-  cm
+  cm,
+  resume,
 };
